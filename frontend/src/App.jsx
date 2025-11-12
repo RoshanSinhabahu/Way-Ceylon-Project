@@ -51,7 +51,6 @@ function App() {
       });
       setResults(res.data);
 
-      // Scroll to results after a short delay to ensure it renders
       setTimeout(() => {
         if (resultRef.current) {
           resultRef.current.scrollIntoView({ behavior: "smooth" });
