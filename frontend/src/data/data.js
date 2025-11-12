@@ -1,4 +1,4 @@
-import { TrendingUp, BrainCircuit, GraduationCap,Video, Code, Calendar, Zap, Heart, Server, Database, Github, Cloud, Linkedin, Facebook, Mail, MapPin, Phone } from 'lucide-react';
+import { Github, Linkedin, Facebook, Mail} from 'lucide-react';
 
 const SOCIAL_LINKS = [
     { icon: Github, label: 'GitHub', href: 'https://github.com/RoshanSinhabahu' },
