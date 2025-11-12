@@ -1,5 +1,5 @@
 import React from "react";
-import { WiDaySunny, WiRain, WiCloud, WiSnow } from "react-icons/wi";
+import { WiDaySunny, WiRain, WiCloud, WiSnow, WiThunderstorm } from "react-icons/wi";
 import { FaClock, FaDollarSign, FaCloudSun } from "react-icons/fa"; // Duration, Budget, Weather
 
 function getWeatherIcon(condition) {
@@ -12,6 +12,8 @@ function getWeatherIcon(condition) {
       return <WiCloud className="text-gray-400" />;
     case "snow":
       return <WiSnow className="text-blue-200" />;
+    case "thunderstorm":
+      return <WiThunderstorm className="text-purple-400" />;
     default:
       return <WiDaySunny className="text-yellow-400" />; // fallback
   }
