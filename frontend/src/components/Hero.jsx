@@ -25,7 +25,7 @@ const HeroSection = ({ days, setDays, categories, setCategories, handleSubmit })
         backgroundAttachment: "fixed",
       }}
     >
-      <h1 className="text-center text-white text-5xl p-1 font-semibold">
+      <h1 className="px-12 text-center text-white text-5xl p-1 font-semibold">
         Life Is Adventure Make The Best Of It
       </h1>
       <div className="text-white text-base pb-6">Plan your trip with WayCeylon</div>
@@ -33,7 +33,7 @@ const HeroSection = ({ days, setDays, categories, setCategories, handleSubmit })
       <form
         id="input-form"
         onSubmit={handleSubmit}
-        className="bg-white/90 flex flex-row p-4 rounded-full lg:w-1/2 w-3/4 items-center justify-between"
+        className="bg-white/90 flex lg:flex-row flex-col p-4 lg:rounded-full rounded-[48px] lg:w-1/2 w-3/4 items-center justify-between "
       >
         {/* Number of days */}
         <div className="flex gap-5 justify-center items-center">
@@ -73,8 +73,8 @@ const HeroSection = ({ days, setDays, categories, setCategories, handleSubmit })
         </div>
 
         {/* Categories (slider) */}
-        <div className="flex flex-col">
-          <div className="flex overflow-x-auto space-x-4 scrollbar-hide py-2">
+        <div className="flex">
+          <div className="flex lg:flex-wrap lg:flex-row flex-col overflow-x-auto space-x-4 space-y-2 lg:space-y-0 scrollbar-hide py-2 items-center justify-center">
             {categoryOptions.map((cat) => (
               <label
                 key={cat.value}
