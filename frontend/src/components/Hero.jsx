@@ -33,7 +33,7 @@ const HeroSection = ({ days, setDays, categories, setCategories, handleSubmit })
       <form
         id="input-form"
         onSubmit={handleSubmit}
-        className="bg-white/90 flex lg:flex-row flex-col p-4 lg:rounded-full rounded-[48px] lg:w-1/2 w-3/4 items-center justify-between "
+        className="bg-black bg-white/90 flex lg:flex-row flex-col p-4 lg:rounded-full rounded-[48px] lg:w-1/2 w-3/4 items-center justify-between "
       >
         {/* Number of days */}
         <div className="flex gap-5 justify-center items-center">
@@ -73,8 +73,8 @@ const HeroSection = ({ days, setDays, categories, setCategories, handleSubmit })
         </div>
 
         {/* Categories (slider) */}
-        <div className="flex">
-          <div className="flex lg:flex-wrap lg:flex-row flex-col overflow-x-auto space-x-4 space-y-2 lg:space-y-0 scrollbar-hide py-2 items-center justify-center">
+        <div className="pt-2">
+          <div className="flex lg:flex-wrap lg:flex-row flex-col lg:space-x-3 justify-between items-center gap-y-3">
             {categoryOptions.map((cat) => (
               <label
                 key={cat.value}
