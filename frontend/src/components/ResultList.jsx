@@ -11,7 +11,7 @@ function ResultList({ results, totalBudget }) {
           <ResultItem key={idx} place={place} />
         ))}
       </ul>
-      <h3 className="text-white rounded-full text-center p-4 px-12 bg-green-600/70 w-content text-xl mt-20 mb-10 font-semibold">
+      <h3 className="text-black rounded-full text-center p-4 px-12 bg-white w-content text-xl mt-20 mb-10 font-semibold shadow-lg shadow-emerald-600/10">
         Total Estimated Budget (Per Person): ${totalBudget}
       </h3>
     </div>
