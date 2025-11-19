@@ -81,7 +81,7 @@ const HeroSection = ({ days, setDays, categories, setCategories, handleSubmit })
                 className={`flex items-center px-4 py-2 rounded-full border transition ${
                   categories.includes(cat.value)
                     ? "bg-emerald-600 text-white border-emerald-100"
-                    : "bg-white text-gray-600 border-gray-300 hover:bg-emerald-600/10 hover:text-black hover:shadow"
+                    : "bg-white text-gray-600 border-gray-300 hover:text-black hover:shadow hover:scale-105 transition"
                 } cursor-pointer`}
               >
                 <input

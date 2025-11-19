@@ -7,6 +7,7 @@ import ResultList from "./components/ResultList";
 import Loader from "./components/Loader";
 import Footer from "./components/Footer";
 import Privacy from "./components/Privacy";
+import NavBar from "./components/NavBar";
 
 function App() {
   const [days, setDays] = useState(3);
@@ -68,6 +69,7 @@ function App() {
 
   return (
       <div>
+        <NavBar />
         <Hero
           days={days}
           setDays={setDays}
