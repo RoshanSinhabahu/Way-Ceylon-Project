@@ -26,7 +26,7 @@ const NavBar = () => {
 
   return (
     <nav
-      ref={navbarRef} // attach ref here
+      ref={navbarRef}
       className="fixed top-0 left-0 w-full z-50 transition-transform duration-300"
     >
       <div className="m-2 bg-white/80 flex p-4 rounded-full items-center justify-between">

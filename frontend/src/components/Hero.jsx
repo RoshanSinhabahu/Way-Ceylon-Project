@@ -25,8 +25,8 @@ const HeroSection = ({ days, setDays, categories, setCategories, handleSubmit })
         backgroundAttachment: "fixed",
       }}
     >
-      <h1 className="px-12 text-center text-white text-5xl p-1 font-semibold">
-        Life Is Adventure Make The Best Of It
+      <h1 className="lg:mt-4 px-12 text-center text-white text-5xl p-1 font-semibold">
+        Life’s for living. Make it count
       </h1>
       <div className="text-white text-base pb-6">Plan your trip with WayCeylon</div>
 
@@ -73,7 +73,7 @@ const HeroSection = ({ days, setDays, categories, setCategories, handleSubmit })
         </div>
 
         {/* Categories (slider) */}
-        <div className="pt-2">
+        <div className="">
           <div className="flex lg:flex-wrap lg:flex-row flex-col lg:space-x-3 justify-between items-center gap-y-3">
             {categoryOptions.map((cat) => (
               <label
