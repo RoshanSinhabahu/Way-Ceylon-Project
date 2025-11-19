@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 
 const NavBar = () => {
-  const navbarRef = useRef(null); // create a ref
+  const navbarRef = useRef(null);
 
   useEffect(() => {
     let lastScroll = 0;
@@ -10,10 +10,8 @@ const NavBar = () => {
       const currentScroll = window.scrollY;
       if (navbarRef.current) {
         if (currentScroll > lastScroll) {
-          // scrolling down → hide
           navbarRef.current.style.transform = "translateY(-100%)";
         } else {
-          // scrolling up → show
           navbarRef.current.style.transform = "translateY(0)";
         }
       }
