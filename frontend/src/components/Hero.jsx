@@ -25,7 +25,7 @@ const HeroSection = ({ days, setDays, categories, setCategories, handleSubmit })
         backgroundAttachment: "fixed",
       }}
     >
-      <h1 className="lg:mt-4 px-12 text-center text-white text-5xl p-1 font-semibold">
+      <h1 className="mt-8 px-12 text-center text-white text-5xl p-1 font-semibold">
         Life’s for living. Make it count
       </h1>
       <div className="text-white text-base pb-6">Plan your trip with WayCeylon</div>

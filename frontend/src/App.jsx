@@ -45,8 +45,8 @@ function App() {
     setResults([]);
 
     try {
-      const res = await axios.post("https://wayceylon-project.onrender.com/recommendations", {
-        //const res = await axios.post("http://localhost:5000/recommendations", {
+      const res = await axios.post("https://wayceylon-project.onrender.com/recommendations", { // hosted backend
+        //const res = await axios.post("http://localhost:5000/recommendations", { // localhost 
         days: parseInt(days),
         categories,
       });
