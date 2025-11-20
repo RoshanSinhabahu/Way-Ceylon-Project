@@ -10,7 +10,7 @@ function ResultList({ results, totalBudget }) {
         {results.map((place, idx) => (
           <div key={idx}
             data-aos="fade-up"
-            data-aos-delay={idx * 50}>
+            data-aos-delay={idx * 30}>
             <ResultItem place={place} />
           </div>
         ))}
