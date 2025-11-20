@@ -26,6 +26,7 @@ const NavBar = () => {
     <nav
       ref={navbarRef}
       className="fixed top-0 left-0 w-full z-50 transition-transform duration-300"
+      data-aos="fade-down"
     >
       <div className="m-2 bg-white/80 flex p-4 rounded-full items-center justify-between">
         <div className="ml-2 text-xl font-bold">WayCeylon</div>

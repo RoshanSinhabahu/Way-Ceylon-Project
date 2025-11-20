@@ -1,6 +1,7 @@
 import React from 'react';
 import { SOCIAL_LINKS } from '../data/data';
 
+
 const Footer = () => (
     <footer className="bg-blac border-t border-gray-200 py-12 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

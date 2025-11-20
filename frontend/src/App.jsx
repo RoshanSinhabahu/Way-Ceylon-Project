@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import Hero from "./components/Hero";
 import ResultList from "./components/ResultList";
@@ -18,6 +20,14 @@ function App() {
 
   const loaderRef = useRef(null);
   const resultRef = useRef(null);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,      // animation speed
+      once: true,         // animate only once
+      offset: 100,        // how far before animation triggers
+    });
+  }, []);
 
   // Scroll to loader when loading starts
   useEffect(() => {

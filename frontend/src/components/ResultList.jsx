@@ -8,7 +8,11 @@ function ResultList({ results, totalBudget }) {
       <h2 className="text-3xl font-semibold mb-12 text-center ">Suggested Itinerary</h2>
       <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
         {results.map((place, idx) => (
-          <ResultItem key={idx} place={place} />
+          <div key={idx}
+            data-aos="fade-up"
+            data-aos-delay={idx * 50}>
+            <ResultItem place={place} />
+          </div>
         ))}
       </ul>
       <h3 className="text-black rounded-full text-center p-4 px-12 bg-white w-content text-xl mt-20 mb-10 font-semibold shadow-lg shadow-emerald-600/10">
