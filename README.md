@@ -1,6 +1,8 @@
 # WayCeylone 🌴✈️
 
-WayCeylone is a web-based trip planner for tourists visiting Sri Lanka. Users can enter travel days, budget, and preferred category, and get recommended attractions to visit.  
+WayCeylone is a web-based trip planner for tourists visiting Sri Lanka. Users can enter travel days, budget, and preferred category, and get recommended attractions to visit. 
+
+### Try : https://way-ceylon.vercel.app/
 
 ### Tech Stack 🛠️
 
