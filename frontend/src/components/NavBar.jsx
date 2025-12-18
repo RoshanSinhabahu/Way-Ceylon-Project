@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const navbarRef = useRef(null);
@@ -29,7 +30,13 @@ const NavBar = () => {
       data-aos="fade-down"
     >
       <div className="m-2 bg-white/80 flex p-4 rounded-full items-center justify-between">
-        <div className="ml-2 text-xl font-bold">WayCeylon</div>
+        <Link
+          to="/"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="ml-2 text-xl font-bold cursor-pointer text-black hover:text-emerald-800 transition-colors"
+        >
+          WayCeylon
+        </Link>
         <div className="flex flex-row flex-grow justify-end items-center space-x-8 mr-2">
           <a href="/" className="text-gray-700 hover:text-emerald-800 hover:scale-105 transition">
             Login

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { SOCIAL_LINKS } from '../data/data';
 
 
@@ -24,9 +25,9 @@ const Footer = () => (
             <p className="text-xs text-gray-500 mt-4">
                 &copy; {new Date().getFullYear()} Time to Program. All rights reserved by Roshan Sinhabahu.
                 <span className='block mt-2'>Images and content belong to their respective owners. Used for educational and non-commercial purposes only. </span>
-                <span><a href="/privacy-policy" className="text-emerald-600 underline hover:text-emerald-800">
-                    Click here 
-                </a> to view our Privacy Policy.</span>
+                <span><Link to="/privacy-policy" className="text-emerald-600 underline hover:text-emerald-800">
+                    Click here
+                </Link> to view our Privacy Policy.</span>
             </p>
         </div>
     </footer>

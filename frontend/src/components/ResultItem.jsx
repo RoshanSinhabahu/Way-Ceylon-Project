@@ -1,6 +1,7 @@
 import React from "react";
 import { WiDaySunny, WiRain, WiCloud, WiSnow, WiThunderstorm } from "react-icons/wi";
 import { FaClock, FaDollarSign, FaCloudSun } from "react-icons/fa"; // Duration, Budget, Weather
+import { MapPin } from "lucide-react";
 
 function getWeatherIcon(condition) {
   switch (condition.toLowerCase()) {
@@ -40,30 +41,42 @@ function ResultItem({ place }) {
 
       {/* Info Icons */}
       <div className="grid grid-cols-2">
-            <div className="flex flex-col items-start text-gray-600 mb-3 gap-y-2">
-            <div className="flex items-center gap-2">
-              <FaClock className="text-yellow-500" />
-              <span>{place.duration} {place.duration > 1 ? "days" : "day"}</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <FaDollarSign className="text-green-500" />
-              <span>${place.cost}</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <FaCloudSun className="text-blue-400" />
-              <span>{place.weather.avgTemp}</span>
-            </div>
+        <div className="flex flex-col items-start text-gray-600 mb-3 gap-y-2">
+          <div className="flex items-center gap-2">
+            <FaClock className="text-yellow-500" />
+            <span>{place.duration} {place.duration > 1 ? "days" : "day"}</span>
           </div>
+          <div className="flex items-center gap-2">
+            <FaDollarSign className="text-green-500" />
+            <span>${place.cost}</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <FaCloudSun className="text-blue-400" />
+            <span>{place.weather.avgTemp}</span>
+          </div>
+        </div>
 
-          {/* Weather Condition */}
-          <div className="-mt-10 ml-16 flex flex-col justify-center items-center">
-            <div className="text-6xl">{getWeatherIcon(place.weather.condition)}</div>
-            <span className="text-md font-semibold">{place.weather.condition}</span>
-      </div>
+        {/* Weather Condition */}
+        <div className="-mt-10 ml-16 flex flex-col justify-center items-center">
+          <div className="text-6xl">{getWeatherIcon(place.weather.condition)}</div>
+          <span className="text-md font-semibold">{place.weather.condition}</span>
+        </div>
       </div>
 
       {/* Description */}
-      <p className="text-gray-700 text-sm line-clamp-3">{place.description}</p>
+      <p className="text-gray-700 text-sm line-clamp-2 mb-4">{place.description}</p>
+
+      {/* Action Button */}
+      <button
+        onClick={() => {
+          const url = `https://www.google.com/maps?q=${place.lat},${place.lon}`;
+          window.open(url, "_blank");
+        }}
+        className="w-full flex items-center justify-center gap-2 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl font-medium transition-all duration-200 active:scale-95 shadow-sm hover:shadow-md"
+      >
+        <MapPin size={18} />
+        View on Map
+      </button>
     </li>
   );
 }

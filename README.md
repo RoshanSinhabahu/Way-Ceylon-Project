@@ -1,30 +1,31 @@
-# WayCeylone 🌴✈️
+# MooMap Project
 
-WayCeylone is a web-based trip planner for tourists visiting Sri Lanka. Users can enter travel days, budget, and preferred category, and get recommended attractions to visit.  
+## 🧩 What I Did
 
-### Tech Stack 🛠️
+- Built a responsive single-page portfolio using **React**
+- Implemented scroll animations, parallax effects, and smooth section navigation
+- Styled with **CSS3**, **Bootstrap**, and custom components
+- Deployed the project to **Vercel** for public access
 
-- **Frontend:** React.js ⚛️  
-- **Backend:** Node.js + Express.js 🚀  
-- **Database:** MongoDB 🗄️  
-- **Communication:** JSON via HTTP requests (POST/GET) 📡  
+### 🌐 Live Demo
+👉 **Visit the website**: [https://moomap.vercel.app/](https://moomap.vercel.app/)
 
-### How It Works ⚙️
+### 🛠 Tech Stack
 
-1. User inputs travel days, budget and category on the frontend.  
-2. Frontend sends this data via a **POST request** to the backend.  
-3. Backend filters available destinations and returns a JSON response.  
-4. Frontend receives the response and displays recommended places.  
+- **Languages**: HTML5, CSS3, JavaScript (ES6)
+- **Frameworks**: React, Bootstrap
+- **Tools**: Git, GitHub, Netlify, VS Code
 
-### Maintenance 🔧
+### 💡 Developer Traits
 
-- **Current Status:** Backend logic functional, frontend under development.  
-- **Planned Improvements:**  
-  - Connect React frontend to backend 🌐  
-  - Replace hardcoded data with MongoDB database 🗄️  
-  - Add user accounts and save itineraries 👤  
-  - Integrate maps and booking APIs 🗺️  
+- Focused on UI clarity and mobile responsiveness  
+- Clean, well-structured code with reusable components  
+- Keen eye for design and animations  
 
-### License 📄
+### 🌟 Contributing
 
-All rights reserved. © 2025 Roshan Sinhabahu
+_Feel free to fork this repository and make improvements. Pull requests are always welcome! 💡_
+
+### 📄 License
+
+_This project is licensed under the MIT license_
