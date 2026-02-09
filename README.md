@@ -1,6 +1,12 @@
 # MooMap Project
 
+<<<<<<< HEAD
 ## 🧩 What I Did
+=======
+WayCeylone is a web-based trip planner for tourists visiting Sri Lanka. Users can enter travel days, budget, and preferred category, and get recommended attractions to visit. 
+
+### Try : https://way-ceylon.vercel.app/
+>>>>>>> 7f2a9b2d683e0e7369092731e993a93c42556811
 
 - Built a responsive single-page portfolio using **React**
 - Implemented scroll animations, parallax effects, and smooth section navigation

@@ -20,9 +20,12 @@ function getWeatherIcon(condition) {
   }
 }
 
-function ResultItem({ place }) {
+function ResultItem({ place, onLocationSelect }) {
   return (
-    <li className="hover:scale-105 bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300  p-5 w-full max-w-sm mx-auto">
+    <li
+      onClick={() => onLocationSelect(place)}
+      className="hover:scale-105 bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300  p-5 w-full max-w-sm mx-auto cursor-pointer"
+    >
       {/* Image */}
       <div className="overflow-hidden rounded-xl mb-4">
         <img
@@ -68,7 +71,8 @@ function ResultItem({ place }) {
 
       {/* Action Button */}
       <button
-        onClick={() => {
+        onClick={(e) => {
+          e.stopPropagation();
           const url = `https://www.google.com/maps?q=${place.lat},${place.lon}`;
           window.open(url, "_blank");
         }}
