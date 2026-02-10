@@ -35,7 +35,7 @@ const NavBar = () => {
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="ml-2 text-xl font-bold cursor-pointer text-black hover:text-emerald-800 transition-colors"
         >
-          WayCeylon
+          GoCeylon
         </Link>
         <div className="flex flex-row flex-grow justify-end items-center space-x-8 mr-2">
           <a href="/" className="text-gray-700 hover:text-emerald-800 hover:scale-105 transition">

@@ -6,7 +6,7 @@ const PrivacyPolicy = () => {
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold mb-6 text-emerald-700">Privacy Policy</h1>
         <p className="mb-4">
-          Welcome to WayCeylon! Your privacy is important to us. This policy explains how we
+          Welcome to GoCeylon! Your privacy is important to us. This policy explains how we
           collect, use, and protect your personal information...
         </p>
         <h2 className="text-2xl font-semibold mt-8 mb-3">1. Information We Collect</h2>
@@ -21,8 +21,8 @@ const PrivacyPolicy = () => {
         <h2 className="text-2xl font-semibold mt-8 mb-3">4. Contact Us</h2>
         <p>
           For privacy concerns, contact us at{" "}
-          <a href="mailto:privacy@wayceylon.com" className="text-emerald-600 underline">
-            privacy@wayceylon.com
+          <a href="mailto:privacy@goceylon.com" className="text-emerald-600 underline">
+            privacy@goceylon.com
           </a>
           .
         </p>

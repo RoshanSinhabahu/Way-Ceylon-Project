@@ -7,9 +7,9 @@ const Footer = () => (
     <footer className="bg-blac border-t border-gray-200 py-12 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             {/* Name and Slogan */}
-            <h3 className="text-2xl font-bold text-gray-900">WayCeylon</h3>
+            <h3 className="text-2xl font-bold text-gray-900">GoCeylon</h3>
             <p className="mt-2 text-sm text-gray-600">
-                Plan your perfect trip to Sri Lanka with WayCeylon!
+                Plan your perfect trip to Sri Lanka with GoCeylon!
             </p>
 
             {/* Social Icons (Large) */}

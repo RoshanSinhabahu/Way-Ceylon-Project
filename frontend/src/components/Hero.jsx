@@ -28,7 +28,7 @@ const HeroSection = ({ days, setDays, categories, setCategories, handleSubmit })
       <h1 className="mt-8 px-12 text-center text-white text-5xl p-1 font-semibold">
         Life’s for living. Make it count
       </h1>
-      <div className="text-white text-base pb-6">Plan your trip with WayCeylon</div>
+      <div className="text-white text-base pb-6">Plan your trip with GoCeylon</div>
 
       <form
         id="input-form"
@@ -78,11 +78,10 @@ const HeroSection = ({ days, setDays, categories, setCategories, handleSubmit })
             {categoryOptions.map((cat) => (
               <label
                 key={cat.value}
-                className={`flex items-center px-4 py-2 rounded-full border transition ${
-                  categories.includes(cat.value)
+                className={`flex items-center px-4 py-2 rounded-full border transition ${categories.includes(cat.value)
                     ? "bg-emerald-600 text-white border-emerald-100"
                     : "bg-white text-gray-600 border-gray-300 hover:text-black hover:shadow hover:scale-105 transition"
-                } cursor-pointer`}
+                  } cursor-pointer`}
               >
                 <input
                   type="checkbox"
