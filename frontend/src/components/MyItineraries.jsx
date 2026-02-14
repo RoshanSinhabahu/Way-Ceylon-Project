@@ -93,7 +93,7 @@ const MyItineraries = () => {
                                         <span className="bg-emerald-100 text-emerald-800 text-xs font-semibold px-2.5 py-0.5 rounded">
                                             {trip.length} Stops
                                         </span>
-                                        <span className="text-gray-600 font-medium">LKR {totalCost.toLocaleString()}</span>
+                                        <span className="text-gray-600 font-medium">Rs {totalCost.toLocaleString()}</span>
                                     </div>
                                     <div className="space-y-2">
                                         {trip.slice(0, 3).map((place, idx) => (

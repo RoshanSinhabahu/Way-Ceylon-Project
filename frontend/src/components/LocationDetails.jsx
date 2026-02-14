@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { ArrowLeft, MapPin, Calendar, DollarSign, CloudSun } from "lucide-react";
+import { ArrowLeft, MapPin, Calendar, Banknote, CloudSun } from "lucide-react";
 import { WiDaySunny, WiRain, WiCloud, WiSnow, WiThunderstorm } from "react-icons/wi";
 
 function getWeatherIcon(condition) {
@@ -98,10 +98,10 @@ const LocationDetails = ({ place, onBack }) => {
 
                             <div className="flex items-center justify-between py-3 border-b border-gray-200 last:border-0">
                                 <div className="flex items-center gap-3 text-gray-600">
-                                    <DollarSign className="text-emerald-500" size={20} />
+                                    <Banknote className="text-emerald-500" size={20} />
                                     <span>Estimated Cost</span>
                                 </div>
-                                <span className="font-semibold text-gray-900">${place.cost}</span>
+                                <span className="font-semibold text-gray-900">Rs {place.cost}</span>
                             </div>
 
                             <div className="flex items-center justify-between py-3 last:border-0">

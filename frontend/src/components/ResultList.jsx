@@ -16,7 +16,7 @@ function ResultList({ results, totalBudget, onLocationSelect }) {
         ))}
       </ul>
       <h3 className="text-black rounded-full text-center p-4 px-12 bg-white w-content text-xl mt-20 mb-10 font-semibold shadow-lg shadow-emerald-600/10">
-        Total Estimated Budget (Per Person): ${totalBudget}
+        Total Estimated Budget (Per Person): Rs {totalBudget}
       </h3>
     </div>
   );

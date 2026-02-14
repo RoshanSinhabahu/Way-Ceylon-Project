@@ -89,7 +89,7 @@ const FeaturedSections = () => {
                                             {place.likes}
                                         </>
                                     ) : (
-                                        <span className="text-emerald-700">LKR {place.cost}</span>
+                                        <span className="text-emerald-700">Rs {place.cost}</span>
                                     )}
                                 </div>
                                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 to-transparent p-4">

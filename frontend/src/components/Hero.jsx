@@ -130,6 +130,32 @@ const HeroSection = ({ days, setDays, categories, setCategories, handleSubmit })
         </svg>
         Genarate Trip
       </button>
+
+      {/* Scroll Indicator */}
+      <div
+        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer hover:scale-130 transition-transform scale-125"
+        onClick={() => window.scrollTo({ top: window.innerHeight, behavior: "smooth" })}
+      >
+        <style>
+          {`
+            @keyframes fadeSlideDown {
+              0% { opacity: 0; transform: translateY(-10px); }
+              50% { opacity: 1; transform: translateY(0); }
+              100% { opacity: 0; transform: translateY(10px); }
+            }
+          `}
+        </style>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-10 w-10 text-white"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          style={{ animation: 'fadeSlideDown 2s infinite ease-in-out' }}
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
+        </svg>
+      </div>
     </section>
   );
 };

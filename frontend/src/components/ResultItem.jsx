@@ -1,6 +1,6 @@
 import React from "react";
 import { WiDaySunny, WiRain, WiCloud, WiSnow, WiThunderstorm } from "react-icons/wi";
-import { FaClock, FaDollarSign, FaCloudSun } from "react-icons/fa"; // Duration, Budget, Weather
+import { FaClock, FaMoneyBillWave, FaCloudSun } from "react-icons/fa"; // Duration, Budget, Weather
 import { MapPin } from "lucide-react";
 
 function getWeatherIcon(condition) {
@@ -50,8 +50,8 @@ function ResultItem({ place, onLocationSelect }) {
             <span>{place.duration} {place.duration > 1 ? "days" : "day"}</span>
           </div>
           <div className="flex items-center gap-2">
-            <FaDollarSign className="text-green-500" />
-            <span>${place.cost}</span>
+            <FaMoneyBillWave className="text-green-500" />
+            <span>Rs {place.cost}</span>
           </div>
           <div className="flex items-center gap-2">
             <FaCloudSun className="text-blue-400" />
