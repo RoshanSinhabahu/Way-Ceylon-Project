@@ -1,8 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const PrivacyPolicy = () => {
+  const navigate = useNavigate();
+
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800 px-8 py-16">
+    <div className="mt-12 min-h-screen bg-gray-50 text-gray-800 px-8 py-16">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold mb-6 text-emerald-700">Privacy Policy</h1>
         <p className="mb-4">

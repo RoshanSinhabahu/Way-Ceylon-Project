@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Hero from "../img/Hero/hero.webp";
 
 const HeroSection = ({ days, setDays, categories, setCategories, handleSubmit }) => {
+  const [offset, setOffset] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setOffset(window.pageYOffset);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const categoryOptions = [
     { label: "🏝️ Beach", value: "beach" },
     { label: "🎭 Culture", value: "culture" },
@@ -16,15 +26,20 @@ const HeroSection = ({ days, setDays, categories, setCategories, handleSubmit })
   };
 
   return (
-    <section
-      className="w-screen h-screen flex justify-center items-center flex-col"
-      style={{
-        backgroundImage: `url(${Hero})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed",
-      }}
-    >
+    <section className="relative w-screen h-screen flex justify-center items-center flex-col overflow-hidden">
+      {/* Parallax Background */}
+      <div
+        className="absolute inset-0 z-[-1]"
+        style={{
+          backgroundImage: `url(${Hero})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          transform: `translateY(${offset * 0.5}px)`, // Moves at half speed
+          height: "120%", // Extra height to cover movement
+          top: "-10%"    // Center the extra height
+        }}
+      ></div>
+
       <h1 className="mt-8 px-12 text-center text-white text-5xl p-1 font-semibold">
         Life’s for living. Make it count
       </h1>
@@ -79,8 +94,8 @@ const HeroSection = ({ days, setDays, categories, setCategories, handleSubmit })
               <label
                 key={cat.value}
                 className={`flex items-center px-4 py-2 rounded-full border transition ${categories.includes(cat.value)
-                    ? "bg-emerald-600 text-white border-emerald-100"
-                    : "bg-white text-gray-600 border-gray-300 hover:text-black hover:shadow hover:scale-105 transition"
+                  ? "bg-emerald-600 text-white border-emerald-100"
+                  : "bg-white text-gray-600 border-gray-300 hover:text-black hover:shadow hover:scale-105 transition"
                   } cursor-pointer`}
               >
                 <input

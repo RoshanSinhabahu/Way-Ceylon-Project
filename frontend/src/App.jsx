@@ -9,6 +9,12 @@ import Footer from "./components/Footer";
 import Privacy from "./components/Privacy";
 import NavBar from "./components/NavBar";
 
+import Login from "./components/Login";
+import Signup from "./components/Signup";
+
+import { AuthProvider } from "./context/AuthContext";
+import MyItineraries from "./components/MyItineraries";
+
 function App() {
   useEffect(() => {
     AOS.init({
@@ -19,16 +25,21 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
-      <div>
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/privacy-policy" element={<Privacy />} />
-        </Routes>
-        <Footer />
-      </div>
-    </BrowserRouter>
+    <AuthProvider>
+      <BrowserRouter>
+        <div>
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/privacy-policy" element={<Privacy />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/my-itineraries" element={<MyItineraries />} />
+          </Routes>
+          <Footer />
+        </div>
+      </BrowserRouter>
+    </AuthProvider>
   );
 }
 
